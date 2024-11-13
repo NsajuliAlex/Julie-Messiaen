@@ -1,0 +1,106 @@
+.navbar .btn-outline-light:hover {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background: url(../images/julie_bck.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.modal-dialog {
+  max-width: 1040px;
+}
+
+.download {
+  background: url('../images/julie_bck.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    background: var(--bs-dark);
+  }
+
+  .hero .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .text-container {
+    text-align: center;
+  }
+}
+/* Social Media Icons Custom Colors */
+.social-icons i {
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+/* Facebook Hover and Active State */
+.social-icon.facebook {
+  color: #3b5998; /* Facebook Default Color */
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2; /* Facebook Hover Color */
+}
+
+.social-icon.facebook:active {
+  color: #0e5d94; /* Facebook Active Color */
+}
+
+/* Twitter Hover and Active State */
+.social-icon.twitter {
+  color: #1da1f2; /* Twitter Default Color */
+}
+
+.social-icon.twitter:hover {
+  color: #1a91da; /* Twitter Hover Color */
+}
+
+.social-icon.twitter:active {
+  color: #1b8cd2; /* Twitter Active Color */
+}
+
+/* Instagram Hover and Active State */
+.social-icon.instagram {
+  color: #e4405f; /* Instagram Default Color */
+}
+
+.social-icon.instagram:hover {
+  color: #d62976; /* Instagram Hover Color */
+}
+
+.social-icon.instagram:active {
+  color: #bc2a8d; /* Instagram Active Color */
+}
+
+/* LinkedIn Hover and Active State */
+.social-icon.linkedin {
+  color: #0077b5; /* LinkedIn Default Color */
+}
+
+.social-icon.linkedin:hover {
+  color: #0a66c2; /* LinkedIn Hover Color */
+}
+
+.social-icon.linkedin:active {
+  color: #004182; /* LinkedIn Active Color */
+}
+
