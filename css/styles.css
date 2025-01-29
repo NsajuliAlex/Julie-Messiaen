@@ -405,3 +405,11 @@ margin-left: 0; /* Ensure it's aligned with form inputs */
 margin-right: 8px; /* Decrease space between checkbox and label */
 margin-left: 0; /* Remove extra space between checkbox and the left edge */
 }
+footer .nav-link:visited {
+  color: #ffffff; /* Ensure visited links also stay white */
+  font-weight: lighter;
+}
+
+.tpcon{
+  font-family: 'Merriweather', serif;
+}
