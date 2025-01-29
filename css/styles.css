@@ -118,17 +118,6 @@
   color: #004182; /* LinkedIn Active Color */
 }
 
-<<<<<<< HEAD
-#mission {
-  color: #762500; /*Text color for mission title */
-}
-#aboutme{
-  color: #315044;
-}
-#expectations{
-  color: #bb3000;
-}
-=======
 
 /* #aboutme{
   color: #315044;
@@ -416,4 +405,3 @@ margin-left: 0; /* Ensure it's aligned with form inputs */
 margin-right: 8px; /* Decrease space between checkbox and label */
 margin-left: 0; /* Remove extra space between checkbox and the left edge */
 }
->>>>>>> 123dd05 (OverhaulOfproject)
