@@ -38,23 +38,6 @@ document.addEventListener('DOMContentLoaded', userScroll);
     document.getElementById('continue-reading').textContent = 'Continue Reading';
   });
 
-<<<<<<< HEAD
-  //JavaScript to close navbar on item click
-     // Get the navbar toggler and collapse elements
-     const navbarCollapse = document.getElementById('navbarNavDropdown');
-     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-   
-     // Loop through all nav links and add a click event to collapse the navbar
-     navLinks.forEach(link => {
-       link.addEventListener('click', () => {
-         // Use Bootstrap's Collapse method to close the navbar
-         const collapse = new bootstrap.Collapse(navbarCollapse, {
-           toggle: false // Don't toggle, just collapse it
-         });
-         collapse.hide(); // Hide the navbar collapse
-       });
-     });
-=======
   // Get the navbar elements
   const navbarCollapse = document.getElementById('navbarNavDropdown');
   const navbarToggler = document.querySelector('.navbar-toggler');
@@ -173,4 +156,3 @@ document.addEventListener('DOMContentLoaded', userScroll);
       }
     });
   });
->>>>>>> 123dd05 (OverhaulOfproject)
