@@ -19,7 +19,58 @@
     body {
         font-family: 'Open Sans', sans-serif;
     }
+/* Changes for the contact page */
+.contact-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container .inputz, .contact-form-container textarea {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+.contact-form-container textarea {
+  resize: vertical;
+}
+.contact-form-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.contact-form-container button:disabled {
+  background-color: #ccc;
+}
+.terms-check {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+margin-left: 0; /* Ensure it's aligned with form inputs */
+}
 
+.terms-check input {
+margin-right: 8px; /* Decrease space between checkbox and label */
+margin-left: 0; /* Remove extra space between checkbox and the left edge */
+}
+footer .nav-link:visited {
+  color: #ffffff; /* Ensure visited links also stay white */
+  font-weight: lighter;
+}
+
+.tpcon{
+  font-family: 'Merriweather', serif;
+}
 </style>
 </head>
 
