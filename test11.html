@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Aanbod</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    h2, h5 {
+      font-family: 'Merriweather', serif;
+      color: #762500;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #762500;
+      margin-top: 10px;
+    }
+
+    .leaf-header {
+      color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      background-color: #762500;
+      display: inline-block;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #762500;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover {
+      background-color: #e9ecef;
+      transform: translateX(10px);
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #762500;
+    }
+
+    .expand-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px; /* Wider button */
+      width: 60px; /* Fixed width */
+      background-color: #762500;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .expand-button:hover {
+      background-color: #5a1c00;
+    }
+
+    .hidden {
+      display: none; /* Hide the items completely */
+    }
+
+    .visible {
+      display: list-item; /* Show the items as list items */
+    }
+
+    .scrollable-list {
+      max-height: 150px; /* Adjust this value as needed */
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* Animation for headings */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2, h5 {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-container">
+          <h2 class="display-6 leaf-header" id="offer">Mijn Aanbod</h2>
+          <div class="content">
+            <h2>1 op 1 sessies, op de manier die helpend is voor jou</h2>
+            <ul>
+              <li class="highlight">Gesprek</li>
+              <li class="highlight">Creatieve technieken</li>
+              <li class="highlight">Whole embodied focusing</li>
+            </ul>
+
+            <h2>Lichaamswerk</h2>
+            <p>
+              Ik vind het belangrijk om naast de gespreksessies ook het lichaam te betrekken tijdens mijn
+              begeleidingen. Wat we denken en voelen heeft invloed op ons lichaam. Het lichaam en de
+              geest zijn onlosmakelijk verbonden met elkaar. Door aandacht te besteden aan lichamelijke
+              sensaties en signalen kunnen we beter begrijpen wat er in ons hoofd omgaat. Het lichaam is
+              als het ware een kompas:
+            </p>
+            <div id="bodywork-list-container">
+              <ul id="bodywork-list">
+                <li>Onze intuïtie wordt versterkt en we leren beslissingen maken die in lijn liggen met
+                  onze diepere behoeften en waarden</li>
+                <li>Stress en spanning in het lichaam verminderen</li>
+                <li>Lichaamsbewustzijn wordt vergroot en we leren beter omgaan met emoties</li>
+                <li>Het haalt ons uit onze gedachten en brengt ons in het hier en nu</li>
+                <li class="hidden">We bevorderen niet alleen onze fysieke gezondheid maar ook het welzijn van de geest en de ziel</li>
+                <li class="hidden">Holistic pulsing is een bijzondere therapievorm die diepgaand werkt.</li>
+                <li class="hidden">Het is een zachte en veilige helingsmethode gebasseerd op ritmische bewegingen.</li>
+              </ul>
+            </div>
+            <button class="expand-button" onclick="toggleHiddenItems('bodywork-list', this)">+</button>
+
+            <h5 class="highlight">Holistic pulsing</h5>
+            <p>
+              Holistic pulsing is een bijzondere therapievorm die diepgaand werkt. Het is een zachte en
+              veilige helingsmethode gebasseerd op ritmische bewegingen, waarbij het lichaam gedurende
+              de volledige therapiesessie geheel of gedeeltelijk in ritmische beweging wordt gehouden.
+            </p>
+            <h6>Doeleinden:</h6>
+            <div id="holistic-pulsing-list-container">
+              <ul id="holistic-pulsing-list">
+                <li>Stress en spanning</li>
+                <li>Fysieke pijn</li>
+                <li>Emotionele trauma’s of problemen zoals acute paniek, chronische depressie,
+                  relatieproblemen</li>
+                <li>Jonge kinderen: driftbuien, lichamelijke klachten</li>
+                <li>Mobilisatie van de gewrichten</li>
+                <li>Stijfheid, verminderde beweeglijkheid</li>
+                <li>Obstipatie</li>
+                <li>Vochtretentie (oedeem)</li>
+                <li>Zwangeren: bevordert een ontspannen levensbegin voor de baby</li>
+                <li class="hidden">Stimulans voor iedereen die streeft om zichzelf te ontdekken</li>
+                <li class="hidden">Zorgt voor diepe ontspanning</li>
+                <li class="hidden">Werkt rechtstreeks in op blokkades in het lichaam</li>
+              </ul>
+            </div>
+            <button class="expand-button" onclick="toggleHiddenItems('holistic-pulsing-list', this)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script>
+    function toggleHiddenItems(listId, button) {
+      const list = document.getElementById(listId);
+      const hiddenItems = list.querySelectorAll('.hidden');
+      const container = list.parentElement;
+
+      // Toggle visibility
+      hiddenItems.forEach(item => {
+        item.classList.toggle('visible');
+      });
+
+      // Change button text
+      if (button.textContent === '+') {
+        button.textContent = '-';
+        if (hiddenItems.length > 3) {
+          container.classList.add('scrollable-list');
+        }
+      } else {
+        button.textContent = '+';
+        container.classList.remove('scrollable-list');
+      }
+    }
+
+    // Auto-collapse on scroll away from the list
+    window.addEventListener('scroll', () => {
+      const buttons = document.querySelectorAll('.expand-button');
+      buttons.forEach(button => {
+        if (button.textContent === '-') {
+          const listId = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+          const list = document.getElementById(listId);
+          const listRect = list.getBoundingClientRect();
+
+          if (listRect.bottom < 0 || listRect.top > window.innerHeight) {
+            button.textContent = '+';
+            const hiddenItems = list.querySelectorAll('.hidden');
+            hiddenItems.forEach(item => {
+              item.classList.remove('visible');
+            });
+            list.parentElement.classList.remove('scrollable-list');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

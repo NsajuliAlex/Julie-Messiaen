@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/julie_icon.png" />
   <title>Julie Messiaen</title>
+<<<<<<< HEAD
+=======
+  <style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+</style>
+>>>>>>> 123dd05 (OverhaulOfproject)
 </head>
 
 <body>
@@ -24,7 +33,11 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
+<<<<<<< HEAD
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+=======
+      <div class="collapse navbar-collapse navNoEdit" id="navbarNavDropdown">
+>>>>>>> 123dd05 (OverhaulOfproject)
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a href="index.html" class="nav-link fw-semibold">Home</a>
@@ -35,6 +48,12 @@
           <li class="nav-item">
             <a href="index.html#details" class="nav-link fw-semibold">Aanbod</a>
           </li>
+<<<<<<< HEAD
+=======
+          <li class="nav-item ">
+            <a href="index.html#prices" class="nav-link fw-semibold ">Praktisch</a>
+          </li>
+>>>>>>> 123dd05 (OverhaulOfproject)
           <li class="nav-item">
             <a href="contact.html" class="nav-link btn btn-outline-light fw-semibold px-4 mx-4">Contact</a>
           </li>
@@ -70,6 +89,7 @@
         transform="translate(0 -158.755)" />
     </svg>
   </header>
+<<<<<<< HEAD
     <!-- Contact Form -->
     <section class="contact bg-light pb-4">
       <div class="container">
@@ -170,6 +190,72 @@
       });
     </script>
   
+=======
+  <!-- Contact Form -->
+  <section class="contact bg-light pb-4">
+    <div class="container">
+      
+      <div class="row"> 
+        <p style="text-align: center; margin-bottom: 0px;">
+          Momenteel is het alleen mogelijk om via dit formulier een afspraak te maken.
+        </br>
+          Vraag hier je gratis kennismakingsgesprek aan
+          of boek een behandeling:
+        </p>
+        <div class="col-12">
+          <section class="contact-form-container">
+            <form action="https://formsubmit.co/hello@juliemessiaen.com" method="POST" id="contactForm">
+                <div class="mb-3 ">
+                    <input type="text" name="name" class="form-control inputz" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control inputz" placeholder="Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control inputz" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="terms-check mb-3 left-side">
+                  <input type="checkbox" id="termsCheck" required>    
+                  <label for="termsCheck">I agree to the <a href="#">terms and conditions</a>.</label>
+              </div>
+              
+                <button type="submit" id="submitBtn" disabled>Submit</button>
+            </form>
+        </section>
+        
+        <script>
+            // Enable Submit Button based on checkbox state
+            document.getElementById('termsCheck').addEventListener('change', function() {
+                document.getElementById('submitBtn').disabled = !this.checked;
+            });
+        </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom JS to Enable/Disable Submit Button -->
+  <script>
+    // Get the checkbox and submit button elements
+    const agreeCheck = document.getElementById('agreeCheck');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // Add an event listener to the checkbox to enable/disable the submit button
+    agreeCheck.addEventListener('change', function () {
+      if (agreeCheck.checked) {
+        submitBtn.disabled = false;  // Enable the submit button
+      } else {
+        submitBtn.disabled = true;  // Disable the submit button
+      }
+    });
+
+    // Form submission (optional)
+    // document.getElementById('terms-form').addEventListener('submit', function (e) {
+    //     e.preventDefault();
+    //     alert('Form Submitted!');
+    // });
+  </script>
+>>>>>>> 123dd05 (OverhaulOfproject)
 
   <!-- Map -->
   <section class="location my-5">
@@ -203,11 +289,19 @@
             Van maandag tot zaterdag<br />
             Voor vragen kunt u gerust contact met mij opnemen
           </p>
+<<<<<<< HEAD
           <div class="social-icons d-flex justify-content-center gap-4">
             <i class="fab fa-facebook fa-2x social-icon facebook"></i>
             <i class="fab fa-twitter fa-2x social-icon twitter"></i>
             <i class="fab fa-instagram fa-2x social-icon instagram"></i>
             <i class="fab fa-linkedin fa-2x social-icon linkedin"></i>
+=======
+         <div class="social-icons d-flex justify-content-center gap-4">
+            <!-- <i class="fab fa-facebook fa-2x social-icon facebook"></i>
+            <i class="fab fa-twitter fa-2x social-icon twitter"></i> -->
+            <a href="https://www.instagram.com/julie.messiaen"><i class="fab fa-instagram fa-2x social-icon instagram"></i></a>
+            <!-- <i class="fab fa-linkedin fa-2x social-icon linkedin"></i> -->
+>>>>>>> 123dd05 (OverhaulOfproject)
           </div>
         </div>
       </div>
@@ -218,7 +312,11 @@
   <footer class="border-top border-primary bg-dark text-white py-4">
     <div class="container">
       <div class="row">
+<<<<<<< HEAD
         <div class="col-md-8">
+=======
+        <div class="col-md-8 navNoEdit">
+>>>>>>> 123dd05 (OverhaulOfproject)
           <ul class="nav">
             <li class="nav-item">
               <a href="index.html" class="nav-link link-light">Home</a>
@@ -230,6 +328,12 @@
               <a href="index.html#details" class="nav-link link-light">Aanbod</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
+=======
+              <a href="index.html#prices" class="nav-link fw-semibold">Praktisch</a>
+            </li>
+            <li class="nav-item">
+>>>>>>> 123dd05 (OverhaulOfproject)
               <a href="contact.html" class="nav-link link-light">Contact</a>
             </li>
           </ul>
